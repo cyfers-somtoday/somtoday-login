@@ -94,13 +94,20 @@
         "deb"
       ],
       "category": "Education",
-      "maintainer": "Cyfers"
+      "maintainer": "Cyfers",
+      "artifactName": "${productName}.${ext}"
+    },
+    "appImage": {
+      "artifactName": "${productName}.${ext}"
+    },
+    "deb": {
+      "artifactName": "${name}_${arch}.${ext}"
     },
     "win": {
       "target": [
         "nsis"
       ],
-      "artifactName": "${productName}-Setup-${version}.${ext}"
+      "artifactName": "${productName}-Setup.${ext}"
     },
     "mac": {
       "target": [
@@ -117,12 +124,16 @@
           ]
         }
       ],
-      "category": "public.app-category.education"
+      "category": "public.app-category.education",
+      "artifactName": "${productName}.${ext}"
+    },
+    "dmg": {
+      "artifactName": "${productName}.${ext}"
     },
     "nsis": {
       "oneClick": false,
       "allowToChangeInstallationDirectory": true,
-      "artifactName": "${productName}-Setup-${version}.${ext}"
+      "artifactName": "${productName}-Setup.${ext}"
     }
   },
   "allowScripts": {
