@@ -31,7 +31,7 @@ provides=('cyfers')
 conflicts=('cyfers')
 options=('!strip' '!debug')
 source=(
-  "Cyfers-${pkgver}.AppImage::https://github.com/Samhij/somtoday-login/releases/download/v${pkgver}/Cyfers-${pkgver}.AppImage"
+  "Cyfers.AppImage::https://github.com/Samhij/somtoday-login/releases/download/v${pkgver}/Cyfers.AppImage"
   "cyfers.desktop"
   "cyfers.sh"
 )
@@ -42,9 +42,9 @@ sha256sums=(
 )
 
 prepare() {
-  chmod +x "Cyfers-${pkgver}.AppImage"
+  chmod +x "Cyfers.AppImage"
   # Extract without FUSE; do not run the AppImage (that would set APPIMAGE).
-  "./Cyfers-${pkgver}.AppImage" --appimage-extract
+  "./Cyfers.AppImage" --appimage-extract
 }
 
 package() {

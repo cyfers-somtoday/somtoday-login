@@ -50,8 +50,8 @@ This directory lives in the Cyfers source repo for review; it does **not** publi
 2. Download the new AppImage and refresh `sha256sums`:
 
    ```bash
-   curl -fsSL -O "https://github.com/Samhij/somtoday-login/releases/download/v${pkgver}/Cyfers-${pkgver}.AppImage"
-   sha256sum "Cyfers-${pkgver}.AppImage"
+   curl -fsSL -O "https://github.com/Samhij/somtoday-login/releases/download/v${pkgver}/Cyfers.AppImage"
+   sha256sum "Cyfers.AppImage"
    ```
 
 3. Regenerate `.SRCINFO` and push:

@@ -83,7 +83,7 @@ jobs:
         run: |
           set -euo pipefail
           PKG_DIR="packaging/aur/cyfers-bin"
-          APPIMAGE="Cyfers-${VERSION}.AppImage"
+          APPIMAGE="Cyfers.AppImage"
           URL="https://github.com/${GITHUB_REPOSITORY}/releases/download/${TAG}/${APPIMAGE}"
 
           curl -fsSL -o "/tmp/${APPIMAGE}" "${URL}"
